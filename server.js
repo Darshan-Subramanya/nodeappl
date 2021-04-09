@@ -8,4 +8,5 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 
-app.listen(5500);
+const port = process.env.port || 5500;
+app.listen(port);
